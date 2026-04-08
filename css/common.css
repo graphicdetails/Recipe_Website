@@ -1,6 +1,6 @@
 :root {
-    --footer-height: 50px;
-    --header-height: 40px;
+    --footer-height: 40px;
+    --header-height: 50px;
     --bookend-padding: 5px;
 }
 
@@ -51,11 +51,12 @@ footer {
 
 header{
     height: var(--header-height);
-    
+    line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
 }
 
 footer{
     height: var(--footer-height);
+    line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));    
 }
 
 header *, footer * {

@@ -1,0 +1,40 @@
+This recipe is a hearty, plant-based twist on the classic Midwestern comfort food, designed for a clean, modern web interface. It uses black beans and vegetables to create a savory base, providing a "meaty" texture without the meat.
+
+Hearty Veggie & Black Bean Tater Tot Hotdish
+Prep time: 15 mins
+Cook time: 40 mins
+Yields: 6-8 servings
+
+
+Ingredients
+Tater Tots: 1 bag (32 oz) frozen tater tots
+Protein: 1 can (15 oz) black beans, drained and rinsed
+Vegetables:
+1 cup corn (frozen or canned)
+1 cup diced bell peppers (red or green)
+1 cup chopped spinach or kale
+1/2 cup diced onion
+Creamy Base:
+1 can (10.5 oz) condensed cream of mushroom soup (or vegetarian substitute)
+1/2 cup sour cream (or vegan sour cream)
+Seasoning:
+1 tsp garlic powder
+1 tsp onion powder
+1 tsp smoked paprika
+Salt and black pepper to taste
+Optional: 1 cup shredded cheddar cheese (or dairy-free alternative)
+
+
+Instructions
+Prep: Preheat your oven to 375°F (190°C). Grease a 9x13 inch baking dish.
+Mix Base: In a large bowl, combine the black beans, corn, diced bell peppers, spinach, onion, condensed soup, sour cream, and spices. Stir until evenly mixed.
+Assemble: Spread the veggie mixture evenly into the bottom of the prepared baking dish.
+Top: Arrange the frozen tater tots in a single layer, tightly covering the top of the veggie mixture.
+Bake: Bake for 30-40 minutes, or until the filling is bubbly and the tater tots are golden brown and crispy.
+Serve: Let it stand for 5 minutes before serving.
+
+
+Web Design Practice Tips
+Ingredients List: Use a checklist format for the ingredients (ideal for user interaction).
+Recipe Steps: Use an ordered list with "Steps" styling to make it easy to follow.
+Image Styling: Use a high-quality photo of a casserole, focusing on the crispy tater tot topping to evoke comfort.
