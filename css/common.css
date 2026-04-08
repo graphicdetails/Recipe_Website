@@ -33,10 +33,19 @@ body {
 main {
     margin: 0 10px;
     padding: 0;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow: auto; /* establishes a new block-formatting context 
+    see https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_formatting_context */
 }
 
 h1, h2, h3 {
     color: rgb(151, 95, 26);
+}
+
+h3{
+    display: inline;
+    margin: 0px;
+    padding: 5px;
 }
 
 header,
@@ -49,12 +58,12 @@ footer {
     background-color: rgb(233, 214, 192);
 }
 
-header{
+header {
     height: var(--header-height);
     line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
 }
 
-footer{
+footer {
     height: var(--footer-height);
     line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));    
 }
@@ -92,7 +101,11 @@ nav ul li a.active {
     background-color: rgb(255, 237, 203);
 }
 
-
+.categories div,
+.tags div {
+    font-size: 0.8em;
+    display: inline;
+}
 
 
 a {
