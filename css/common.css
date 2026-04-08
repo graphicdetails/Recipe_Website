@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    max-width: 800px;
+    
     margin: auto; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(250, 241, 228);
@@ -31,10 +31,11 @@ body {
 }
 
 main {
-    margin: 0 10px;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    overflow: auto; /* establishes a new block-formatting context 
+    overflow: auto; /*  establishes a new block-formatting context 
     see https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_formatting_context */
 }
 
@@ -105,8 +106,44 @@ nav ul li a.active {
 .tags div {
     font-size: 0.8em;
     display: inline;
+    width: 90vw;
+}
+.featRecipe {
+    padding: 20px;
+    padding-top: 5px;
+    background-color: floralwhite;
+    border-radius: 20px;
 }
 
+.featRecipe p {
+    text-align: justify;
+}
+.featRecipe figure {
+    float: right;
+    width: 50%;
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(171, 228, 225);
+}
+
+.featRecipe figure figcaption,
+.featRecipe figure img {
+    float: right;
+    width: 100%;
+    clear: right;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.featRecipe figcaption a,
+.featRecipe p a {
+    font-weight: bold;
+    color: darkslategray;
+    padding: 2px;
+}
 
 a {
     color: rgb(53, 27, 19);
