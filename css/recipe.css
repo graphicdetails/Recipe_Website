@@ -1,0 +1,108 @@
+article { 
+    text-align: justify;
+}
+
+article > header, 
+article > footer {
+    font-size: 0.8em;
+}
+dl,
+article > footer dl {
+    text-align: left;  
+    display: inline-block;
+}
+dt,
+article > footer dt {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 80px;
+    text-align: right;
+}
+
+article > footer dt::after {
+    content: ": ";
+}
+dd,
+article > footer dd {
+    display: inline;
+    margin-left: 0.1rem;
+}
+article > footer dd a,
+article > footer dd a:hover {
+    padding: 0;
+}
+dd::after,
+article > footer dd::after {
+    content: "";
+    display: block;
+}
+
+time {
+  font-weight: bold;
+}
+
+article > aside {
+    background-color: floralwhite;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+article details summary {
+    cursor: pointer;
+    color: rgb(151, 95, 26);
+    
+}
+
+article details summary::marker {
+    content: "⮮ "; 
+    font-size: 1.5rem;
+
+}
+article details[open] summary::marker {
+    content: "⮬ "; 
+    font-size: 1.5rem;
+}
+
+figure {
+    float: right;
+    width: 70%;
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(171, 228, 225);
+}
+
+figure figcaption,
+figure img {
+    text-align: center;
+    width: 100%;
+    clear: right;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+figcaption a,
+p a {
+    font-weight: bold;
+    color: darkslategray;
+    padding: 2px;
+}
+
+
+
+#ingredients,
+#instructions {
+    clear: both;
+}
+
+#ingredients dt {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 60px;
+    text-align: right;
+}

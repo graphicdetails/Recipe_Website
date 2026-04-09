@@ -18,22 +18,20 @@ html {
 }
 
 body {
-    
     margin: auto; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(250, 241, 228);
     color: rgb(27, 27, 27); 
-
     line-height: 1.6;
     padding: 0;
     font-size: 12pt; 
- 
+    
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     overflow: auto; /*  establishes a new block-formatting context 
     see https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_formatting_context */
@@ -49,8 +47,8 @@ h3{
     padding: 5px;
 }
 
-header,
-footer {
+body > header,
+body > footer {
     line-height: 1.1rem;
     text-align: center;
     font-size: .9rem;
@@ -59,24 +57,35 @@ footer {
     background-color: rgb(233, 214, 192);
 }
 
-header {
+body > header {
     height: var(--header-height);
     line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
 }
 
-footer {
+body > footer {
     height: var(--footer-height);
     line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));    
 }
 
-header *, footer * {
+body > header *, 
+body > footer * {
     margin: 0;
     padding: 0;
 }
 
+ul {
+    list-style-type: "• ";
+    padding: 1em;
+}
+ol {
+    padding: 1em;
+}
+
+
 nav ul {
     list-style: none;
     text-align: center;
+    font-weight: bold;
     padding: 0;
     margin: 0;
 }
@@ -102,6 +111,7 @@ nav ul li a.active {
     background-color: rgb(255, 237, 203);
 }
 
+
 .categories div,
 .tags div {
     font-size: 0.8em;
@@ -109,8 +119,8 @@ nav ul li a.active {
     width: 90vw;
 }
 .featRecipe {
-    padding: 20px;
-    padding-top: 5px;
+    padding: 10px;
+
     background-color: floralwhite;
     border-radius: 20px;
 }
@@ -149,6 +159,7 @@ a {
     color: rgb(53, 27, 19);
     text-decoration: none;
     padding: 10px 15px;
+    border-radius: 10px;
 }
 
 a:visited {
