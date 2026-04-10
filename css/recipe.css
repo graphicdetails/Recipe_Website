@@ -103,6 +103,14 @@ p a {
 #links li::marker {
     content: "";
 }
+
+#links li a {
+    color: rgb(151, 95, 26);
+    padding: 1px;
+}
+#links li span {
+    font-size: 0.8rem;
+}
 #tags li::marker {
     content: "";
     font-weight: bold;

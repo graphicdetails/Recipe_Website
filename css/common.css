@@ -1,179 +1,172 @@
 :root {
-    --footer-height: 40px;
-    --header-height: 50px;
-    --bookend-padding: 5px;
+  --footer-height: 40px;
+  --header-height: 50px;
+  --bookend-padding: 5px;
 }
 
 html {
-    line-height: 1.1;
-    box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
-    margin: 0;
+  line-height: 1.1;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: auto; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(250, 241, 228);
-    color: rgb(27, 27, 27); 
-    line-height: 1.6;
-    padding: 0;
-    font-size: 12pt; 
-    
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(250, 241, 228);
+  color: rgb(27, 27, 27);
+  line-height: 1.6;
+  padding: 0;
+  font-size: 12pt;
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    overflow: auto; /*  establishes a new block-formatting context 
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  overflow: auto; /*  establishes a new block-formatting context 
     see https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_formatting_context */
 }
 
-h1, h2, h3, h4, h5 {
-    color: rgb(151, 95, 26);
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(151, 95, 26);
 }
-
-
 
 body > header,
 body > footer {
-    line-height: 1.1rem;
-    text-align: center;
-    font-size: .9rem;
-    margin: 0;
-    padding: 5px 0;
-    background-color: rgb(233, 214, 192);
+  line-height: 1.1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 5px 0;
+  background-color: rgb(233, 214, 192);
 }
 
 body > header {
-    height: var(--header-height);
-    line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
+  height: var(--header-height);
+  line-height: calc(var(--header-height) - (2 * var(--bookend-padding)));
 }
 
 body > footer {
-    height: var(--footer-height);
-    line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));    
+  height: var(--footer-height);
+  line-height: calc(var(--footer-height) - (2 * var(--bookend-padding)));
 }
 
-body > header *, 
+body > header *,
 body > footer * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style-type: "• ";
-    padding: 1em;
+  list-style-type: "• ";
+  padding: 1em;
 }
 ol {
-    padding: 1em;
+  padding: 1em;
 }
 
-
 nav ul {
-    list-style: none;
-    text-align: center;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 5px;
-    padding: 5px;
+  display: inline;
+  margin: 0;
+  padding: 2px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 5px;
+  border-radius: 10px;
 }
 
 nav ul li a:hover {
-    color: black;
-    background-color: rgb(255, 215, 167);
+  color: black;
+  background-color: rgb(255, 215, 167);
 }
 
 nav ul li a.active {
-    background-color: rgb(255, 237, 203);
+  background-color: rgb(255, 237, 203);
 }
-
 
 .categories div,
 .tags div {
-    font-size: 0.8em;
-    display: inline;
-    width: 90vw;
+  font-size: 0.8em;
+  display: inline;
+  width: 90vw;
 }
 .categories h3,
 .tags h3 {
-    display: inline;
-    margin: 0px;
-    padding: 5px;
+  display: inline;
+  margin: 0px;
+  padding: 5px;
 }
 .featRecipe {
-    padding: 10px;
+  padding: 10px;
 
-    background-color: floralwhite;
-    border-radius: 20px;
+  background-color: floralwhite;
+  border-radius: 20px;
 }
 
 .featRecipe p {
-    text-align: justify;
+  text-align: justify;
 }
 .featRecipe figure {
-    float: right;
-    width: 50%;
-    margin: 0;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(171, 228, 225);
+  float: right;
+  width: 50%;
+  margin: 0;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(171, 228, 225);
 }
 
 .featRecipe figure figcaption,
 .featRecipe figure img {
-    float: right;
-    width: 100%;
-    clear: right;
-    margin-top: 5px;
-    font-style: italic;
-    font-size: 0.8rem;
+  float: right;
+  width: 100%;
+  clear: right;
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .featRecipe figcaption a,
 .featRecipe p a {
-    font-weight: bold;
-    color: darkslategray;
-    padding: 2px;
+  font-weight: bold;
+  color: darkslategray;
+  padding: 2px;
 }
 
 a {
-    color: rgb(53, 27, 19);
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 10px;
+  color: rgb(53, 27, 19);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 a:visited {
-    color: rgb(58, 58, 58);
+  color: rgb(58, 58, 58);
 }
 a:hover {
-    color: rgb(150, 82, 0);
-    background-color: rgb(255, 215, 167);
+  color: rgb(150, 82, 0);
+  background-color: rgb(255, 215, 167);
 }
-
-
-
-
-
-
