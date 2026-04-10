@@ -56,14 +56,20 @@ article details summary {
 }
 
 article details summary::marker {
-    content: "⮮ "; 
+    content: "🞦 "; 
     font-size: 1.5rem;
-
 }
 article details[open] summary::marker {
-    content: "⮬ "; 
+    content: "🞭 "; 
     font-size: 1.5rem;
 }
+article details summary h3{
+    display: inline;
+    margin: 0px;
+    padding: 5px;
+}
+
+
 
 figure {
     float: right;
@@ -92,7 +98,16 @@ p a {
     padding: 2px;
 }
 
-
+#notes li::marker,
+#rating li::marker,
+#links li::marker {
+    content: "";
+}
+#tags li::marker {
+    content: "";
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
 #ingredients,
 #instructions {
@@ -103,6 +118,6 @@ p a {
     font-weight: bold;
     display: inline-block;
     margin-right: 5px;
-    min-width: 60px;
+    min-width: 65px;
     text-align: right;
 }

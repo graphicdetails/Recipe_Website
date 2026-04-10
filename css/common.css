@@ -37,15 +37,11 @@ main {
     see https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_formatting_context */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     color: rgb(151, 95, 26);
 }
 
-h3{
-    display: inline;
-    margin: 0px;
-    padding: 5px;
-}
+
 
 body > header,
 body > footer {
@@ -117,6 +113,12 @@ nav ul li a.active {
     font-size: 0.8em;
     display: inline;
     width: 90vw;
+}
+.categories h3,
+.tags h3 {
+    display: inline;
+    margin: 0px;
+    padding: 5px;
 }
 .featRecipe {
     padding: 10px;
