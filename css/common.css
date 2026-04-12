@@ -39,8 +39,7 @@ main {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   color: rgb(151, 95, 26);
 }
 
@@ -50,7 +49,7 @@ body > footer {
   text-align: center;
   font-size: 0.9rem;
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
   background-color: rgb(233, 214, 192);
 }
 
@@ -70,6 +69,7 @@ body > footer * {
   padding: 0;
 }
 
+/*  ----might not need this for home page-----
 ul {
   list-style-type: "• ";
   padding: 1em;
@@ -77,34 +77,61 @@ ul {
 ol {
   padding: 1em;
 }
+----------------    */
+nav {
+  background-color: rgb(233, 214, 192);
+}
 
 nav ul {
+  width: 100%;
+  max-width: 1200px;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
   text-align: center;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0;
-  padding: 2px;
+nav li {
+  display: flex;
+  margin: 0 5px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
-  padding: 10px 5px;
-  border-radius: 10px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: black;
   background-color: rgb(255, 215, 167);
 }
 
-nav ul li a.active {
+nav a.active {
   background-color: rgb(255, 237, 203);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(233, 214, 192, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.sidebar li,
+.sidebar a {
+  width: 100%;
 }
 
 .categories div,
@@ -169,4 +196,40 @@ a:visited {
 a:hover {
   color: rgb(150, 82, 0);
   background-color: rgb(255, 215, 167);
+}
+
+.menu-button{
+  display: flex;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 0 5px;
+
+}
+
+.menu-x-button{
+  display: block;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button{
+    display: flex;
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
+@media(max-width: 400px) {
+  .sidebar{
+    width: 100%;
+    align-items: center;
+  }
+  .sidebar li {
+    text-align: center;
+    margin: 0 auto;
+  }
 }

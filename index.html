@@ -16,12 +16,20 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><i class='fas fa-times menu-x-button' ></i></li>
           <li><a href="index.html" class="active">Home</a></li>
-
           <li><a href="steak-nuggets.html">Steak Nuggets</a></li>
           <li><a href="fried-fish.html">Fried Fish</a></li>
           <li><a href="tatertot-hotdish.html">Tatertot Hotdish</a></li>
+          
+        </ul>
+        <ul>
+          <li onclick=showSidebar()><i class='fas fa-bars menu-button' ></i></li>
+          <li class="hideOnMobile"><a href="index.html" class="active">Home</a></li>
+          <li class="hideOnMobile"><a href="steak-nuggets.html">Steak Nuggets</a></li>
+          <li class="hideOnMobile"><a href="fried-fish.html">Fried Fish</a></li>
+          <li class="hideOnMobile"><a href="tatertot-hotdish.html">Tatertot Hotdish</a></li>
         </ul>
       </nav>
     </header>
@@ -149,5 +157,15 @@
       <p>&copy;2026 Graphic Details Design</p>
     </footer>
     <!-- CONTENT GOES HERE -->
+     <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+     </script>
   </body>
 </html>
