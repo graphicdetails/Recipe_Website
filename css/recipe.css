@@ -4,7 +4,7 @@ article {
 
 article > header,
 article > footer {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 dl,
 article > footer dl {
@@ -38,8 +38,8 @@ article > footer dd::after {
   display: block;
 }
 article ul {
-  list-style-type: "• ";
-  padding: 1em;
+  list-style-type: circle;
+
 }
 article ol {
   padding: 1em;
@@ -51,30 +51,35 @@ time {
 
 article > aside {
   background-color: floralwhite;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 5px;
+  margin-top: 10px;
   border-radius: 10px;
+}
+
+aside ul {
+
 }
 
 article details summary {
   cursor: pointer;
   color: rgb(151, 95, 26);
+  padding: 5px;
 }
 
 article details summary::marker {
-  content: "\f067  "; /* Unicode for fa-minus */
+  content: "\f103  "; /* Unicode for fa- arrow down to expand */
   font-family: "Font Awesome 5 Free";
   font-weight: 900; /* Solid icons require 900 */
 }
 article details[open] summary::marker {
-  content: "\f068  "; /* Unicode for fa-minus */
+  content: "\f102  "; /* Unicode for fa- arrow up to hide */
   font-family: "Font Awesome 5 Free";
   font-weight: 900; /* Solid icons require 900 */
 }
 article details summary h3 {
-  display: inline;
-  margin: 0px;
-  padding: 5px;
+    display: inline;
+    padding: 10px;
+
 }
 
 figure {
@@ -127,11 +132,18 @@ p a {
 #instructions {
   clear: both;
 }
-
+#instructions ol {
+    margin: 0;
+    padding-right: 5px;
+}
+#instructions li {
+    padding-left: 10px;
+    margin-top: 10px;
+}
 #instructions li::marker {
-  content: "\f0c8  "; /* Unicode for fa-minus */
+  content: "\f111 "; /* Unicode for fa- open square -  \f14a for checkmark in square - f111 circle f058 checked circle */
   font-family: "Font Awesome 5 Free";
-  font-weight: 400; /* Solid icons require 900 */
+  font-weight: 400; /* 900 for Solid  */
 }
 
 /* this is not correct - might use something like this to make interactive checklist */
